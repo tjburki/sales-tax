@@ -1,0 +1,9 @@
+@import './constants.scss';
+
+.app {
+  max-width: $max-body-width;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+}
