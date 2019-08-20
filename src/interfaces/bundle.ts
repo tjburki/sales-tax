@@ -1,6 +1,6 @@
-import { ICartItem } from "./item";
+import { ICartBaseItem } from "./cart";
 
 export interface IBundle {
     name: string,
-    items: ICartItem[]
+    items: ICartBaseItem[]
 }

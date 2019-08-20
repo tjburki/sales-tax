@@ -1,8 +1,8 @@
 import * as categoryTypes from './categories.types';
 import * as categoriesController from './categories.controller';
-import { IDispatch } from '../../interfaces/store';
+import { ThunkDispatch } from 'redux-thunk';
 
-export const getCategories = () => async (dispatch: ({}: IDispatch) => void) => {
+export const getCategories = () => async (dispatch: ThunkDispatch<{}, {}, any>) => {
     dispatch({ type: categoryTypes.ITEMS_GET_REQUEST });
 
     try {

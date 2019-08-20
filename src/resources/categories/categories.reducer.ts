@@ -1,5 +1,5 @@
 import * as categoryTypes from './categories.types';
-import { IDispatch } from '../../interfaces/store';
+import { IDispatchable } from '../../interfaces/store';
 
 const defaultState = {
     categories: [],
@@ -7,7 +7,7 @@ const defaultState = {
     error: ''
 };
 
-const categoriesReducer = (state = defaultState, action: IDispatch) => {
+const categoriesReducer = (state = defaultState, action: IDispatchable) => {
     switch(action.type) {
         case categoryTypes.ITEMS_GET_REQUEST:
             return {

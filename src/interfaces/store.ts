@@ -1,4 +1,4 @@
-export interface IDispatch {
+export interface IDispatchable {
     type: string,
     payload?: any
 }

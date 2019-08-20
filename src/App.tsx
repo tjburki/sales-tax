@@ -1,19 +1,16 @@
 import * as React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import classes from './App.module.scss';
-import { Catalogue } from './components/catalogue/catalogue';
-import { Cart } from './components/cart/cart';
-import { BundleSelector } from './components/bundle/bundle-selector';
+import { OrderForm } from './pages/order-form';
+import { Checkout } from './pages/checkout';
 
 function App() {
   return (
     <div className={classes.app}>
-      <div className='col-sm-8'>
-        <BundleSelector />
-        <Catalogue />
-      </div>
-      <div className='col-sm-4'>
-        <Cart />
-      </div>
+      <Router>
+        <Route exact path='/' component={OrderForm} />
+        <Route path='/checkout' component={Checkout} />
+      </Router>
     </div>
   );
 }
