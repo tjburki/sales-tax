@@ -18,6 +18,7 @@ export const ItemDisplay: React.FC<IItemDisplayProps> = (props: IItemDisplayProp
                     className='form-control' 
                     min="0" 
                     placeholder='#' 
+                    pattern="[0-9]*"
                     style={{width: 75, marginRight: 10}} 
                     value={props.quantity <= 0 ? '' : props.quantity}
                     onChange={(e: React.FormEvent<HTMLInputElement>) => {
