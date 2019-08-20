@@ -42,13 +42,13 @@ export const Cart: React.FC<ICartProps> = (props: ICartProps) =>
                         )} />
                     </div>
                 </div>
-                <div className={`row ${classes.buttons}`}>
-                    <div className='col-sm-5'>
+                <div className={classes.buttons}>
+                    <div>
                         <button className='btn btn-outline-dark' disabled={!props.items.length} onClick={props.clear}>
                             <Icon type='times' /> Clear
                         </button>
                     </div>
-                    <div className='col-sm-7 text-right'>
+                    <div>
                         <Link to='/checkout'>
                             <button className='btn btn-outline-primary' disabled={!props.items.length}>
                                 <Icon type='credit-card' /> Checkout
