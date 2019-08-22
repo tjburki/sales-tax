@@ -1,7 +1,7 @@
-exports.handler = function(event) {
+exports.handler = async(event) => {
     switch(event.httpMethod) {
         case 'GET':
-            return getBundles();
+            return await getBundles();
     }
 }
 
