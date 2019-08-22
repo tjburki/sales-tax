@@ -1,4 +1,4 @@
-#Example Order Form With Sales Tax Calculation
+###Example Order Form With Sales Tax Calculation
 
 ## Placing an Order
 
@@ -22,7 +22,7 @@ Clear the cart to start fresh or move on to checkout:
 
 ![Clear Cart or Go to Checkout](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/clear-cart-or-checkout.png?alt=media&token=ffcc7644-fe36-4ac3-bece-17ce3d3f075f)
 
-### Checking Out
+## Checking Out
 
 Review your order information with tax included:
 
@@ -32,7 +32,7 @@ Return to your order to change it, or confirm the order to proceed:
 
 ![Back to Order or Confirm](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/back-to-order-or-confirm.png?alt=media&token=98c96b2e-c55a-4dc4-a72b-ccf752038822)
 
-### Order Confirmation
+## Order Confirmation
 
 Your order has been confirmed, view your order number and continue shopping: 
 
