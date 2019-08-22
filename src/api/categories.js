@@ -1,18 +1,16 @@
 exports.handler = async(event) => {
-    switch(event.httpMethod) {
-        case 'GET':
-            return getCategories();
+    if (event.httpMethod !== 'GET') {
+        return {
+            statusCode: 405,
+            body: 'Method Not Allowed'
+        };
     }
-}
 
-//GET
-function getCategories() {
     return {
         statusCode: 200,
-        body: categories
-    };;
+        body: JSON.stringify(categories)
+    }
 }
-
 const categories = [
     {
         id: 1,

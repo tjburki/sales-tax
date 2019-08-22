@@ -1,16 +1,15 @@
 exports.handler = async(event) => {
-    switch(event.httpMethod) {
-        case 'GET':
-            return await getBundles();
+    if (event.httpMethod !== 'GET') {
+        return {
+            statusCode: 405,
+            body: 'Method Not Allowed'
+        };
     }
-}
 
-//GET
-function getBundles() {
     return {
         statusCode: 200,
-        body: bundles
-    };
+        body: JSON.stringify(bundles)
+    }
 }
 
 const bundles = [
