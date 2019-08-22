@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 //Constants
-import { formatCurrency } from '../../helpers';
+import { formatCurrency } from '../../shared/helpers';
 
 //Interfaces
 interface ICurrencyProps {

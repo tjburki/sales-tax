@@ -1,5 +1,5 @@
 //Data
-import { bundles } from '../../data';
+import { bundles } from '../../store/data';
 
 //Interfaces
 import { IDispatchable } from '../../interfaces/store';

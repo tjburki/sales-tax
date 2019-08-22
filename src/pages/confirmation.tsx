@@ -9,7 +9,7 @@ import { Icon } from '../components/layout/icon';
 import classes from './confirmation.module.scss';
 
 //Helpers
-import * as helpers from '../helpers';
+import * as helpers from '../shared/helpers';
 
 //Interfaces
 interface IConfirmationProps { }

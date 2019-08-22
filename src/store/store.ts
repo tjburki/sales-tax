@@ -3,10 +3,10 @@ import { combineReducers, createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 //Resources
-import itemsReducer from './resources/items/items.reducer';
-import categoriesReducer from './resources/categories/categories.reducer';
-import cartReducer from './resources/cart/cart.reducer';
-import bundlesReducer from './resources/bundles/bundles.reducer';
+import itemsReducer from '../resources/items/items.reducer';
+import categoriesReducer from '../resources/categories/categories.reducer';
+import cartReducer from '../resources/cart/cart.reducer';
+import bundlesReducer from '../resources/bundles/bundles.reducer';
 
 const reducers = combineReducers({
     itemsReducer,

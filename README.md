@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Example Order Form With Sales Tax Calculation
 
-## Available Scripts
+## Placing an Order
 
-In the project directory, you can run:
+Select the amount of each item desired:
 
-### `npm start`
+![Select Amount](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/select-amount.png?alt=media&token=60ab2263-c7f7-48c4-8527-9605c845000d)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Special pre-arranged baskets are available via the buttons at the top of the form:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+![Basket Selection](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/baskets.png?alt=media&token=66b8d08a-4607-4747-b8b6-0f87342956bd)
 
-### `npm test`
+Check the key at the bottom of the form for taxation information:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Taxation Key](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/taxation-key.png?alt=media&token=b3d51c7d-9d97-4b98-bcbc-91475b6b2ac5)
 
-### `npm run build`
+Review the items selected in your cart:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Review Cart](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/cart.png?alt=media&token=8b874144-b856-4581-b5c2-58ddcc251501)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Clear the cart to start fresh or move on to checkout:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Clear Cart or Go to Checkout](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/clear-cart-or-checkout.png?alt=media&token=ffcc7644-fe36-4ac3-bece-17ce3d3f075f)
 
-### `npm run eject`
+### Checking Out
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Review your order information with tax included:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Review at Checkout](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/review-at-checkout.png?alt=media&token=152374c9-49ac-49ab-9738-00796fbe0ac8)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Return to your order to change it, or confirm the order to proceed:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Back to Order or Confirm](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/back-to-order-or-confirm.png?alt=media&token=98c96b2e-c55a-4dc4-a72b-ccf752038822)
 
-## Learn More
+### Order Confirmation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Your order has been confirmed, view your order number and continue shopping: 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Confirmed](https://firebasestorage.googleapis.com/v0/b/tax-app-9496a.appspot.com/o/confirmed.png?alt=media&token=b1c8c09c-2146-491a-9346-763387893fc4)

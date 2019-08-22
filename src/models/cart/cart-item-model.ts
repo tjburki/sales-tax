@@ -1,6 +1,6 @@
 //Constants
-import * as constants from '../../constants';
-import * as helpers from '../../helpers';
+import * as constants from '../../shared/constants';
+import * as helpers from '../../shared/helpers';
 
 //Interfaces
 import { ICartItem } from '../../interfaces/cart';

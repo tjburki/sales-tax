@@ -108,20 +108,6 @@ export const categories = [
         taxExempt: true
     },
     {
-        id: 3,
-        name: 'Popcorn',
-        items: [
-            {
-                id: 5,
-                name: 'Bag of Microwave Popcorn',
-                price: .99,
-                imported: false,
-                taxExempt: true
-            }
-        ],
-        taxExempt: true
-    },
-    {
         id: 4,
         name: 'Electronics',
         items: [
@@ -141,6 +127,20 @@ export const categories = [
             }
         ],
         taxExempt: false
+    },
+    {
+        id: 3,
+        name: 'Popcorn',
+        items: [
+            {
+                id: 5,
+                name: 'Bag of Microwave Popcorn',
+                price: .99,
+                imported: false,
+                taxExempt: true
+            }
+        ],
+        taxExempt: true
     },
     {
         id: 5,

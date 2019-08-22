@@ -9,7 +9,7 @@ import { Currency } from '../layout/currency';
 import classes from './item-display.module.scss';
 
 //Constants
-import * as constants from '../../constants';
+import * as constants from '../../shared/constants';
 
 //Interfaces
 interface IItemDisplayProps extends IItem { }

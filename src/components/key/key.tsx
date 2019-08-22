@@ -5,7 +5,7 @@ import * as React from 'react';
 import { Percent } from '../layout/percent';
 
 //Constants
-import * as constants from '../../constants';
+import * as constants from '../../shared/constants';
 
 //Interfaces
 interface IKeyProps { }

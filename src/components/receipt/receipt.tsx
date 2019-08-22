@@ -1,10 +1,20 @@
+//Packages
 import * as React from 'react';
-import classes from './receipt.module.scss';
+
+//Components
 import { ItemDisplay } from '../item/item-display';
 import { Currency } from '../layout/currency';
-import { CartItemModel } from '../../models/cart/cart-item-model';
-import * as helpers from '../../helpers';
 
+//Models
+import { CartItemModel } from '../../models/cart/cart-item-model';
+
+//Constants
+import * as helpers from '../../shared/helpers';
+
+//Styles
+import classes from './receipt.module.scss';
+
+//Interfaces
 interface IReceiptProps {
     showTax?: boolean
 }
@@ -19,7 +29,7 @@ export const Receipt: React.FC<IReceiptProps> = (props: any) =>
                             <div>
                                 <ItemDisplay
                                     id={item.id}
-                                    name={`${item.name}${item.quantity > 0 ? ` (${item.quantity})` : ''}`}
+                                    name={`${item.name}${item.quantity > 0 ? ` (${item.quantity.toLocaleString()})` : ''}`}
                                     price={props.showTax ? item.finalPrice : item.listPrice}
                                     imported={item.imported}
                                     taxExempt={item.taxExempt}

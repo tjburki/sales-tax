@@ -14,7 +14,7 @@ export const roundToNearest = (value: number, roundTo: number): number => {
 export const toPercent = (value: number): number =>
     value / 100;
 
-export const reducePropertyToNumber = (arr: [], propertyName: string): number =>
+export const reducePropertyToNumber = (arr: {}[], propertyName: string): number =>
     arr.reduce((a: number, b: any) => 
         a + b[propertyName] || 0,
         0

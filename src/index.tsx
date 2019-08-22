@@ -11,7 +11,7 @@ import * as serviceWorker from './serviceWorker';
 import App from './App';
 
 //Resources
-import store from './store';
+import store from './store/store';
 
 //Styles
 import './index.scss';

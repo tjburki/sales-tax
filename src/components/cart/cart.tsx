@@ -7,19 +7,21 @@ import { Link } from 'react-router-dom';
 import ReceiptContainer from '../receipt/receipt-container';
 import { ButtonRow } from '../layout/button-row';
 
+//Shared
+import * as helpers from '../../shared/helpers';
+
 //Styles
 import classes from './cart.module.scss';
 
 //Interfaces
 import { Icon } from '../layout/icon';
 import { ICart, ICartClearer } from '../../interfaces/cart';
-import { ICartItem } from '../../interfaces/cart';
 
 interface ICartProps extends ICart, ICartClearer { }
 
 export const Cart: React.FC<ICartProps> = (props: ICartProps) =>
     <div className={classes.container}>
-        <Section title={`Cart (${props.items.reduce((a: number, b: ICartItem) => a + b.quantity, 0)})`} icon='shopping-cart'>
+        <Section title={`Cart (${helpers.reducePropertyToNumber(props.items, 'quantity').toLocaleString()})`} icon='shopping-cart'>
             <div className={classes.body}>
                 <div>
                     <ReceiptContainer />
