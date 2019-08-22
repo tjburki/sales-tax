@@ -7,7 +7,7 @@ exports.handler = async(event) => {
 
 //GET
 function getItems() {
-    return result(items);
+    return items;
 }
 
 const items = [

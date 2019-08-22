@@ -7,7 +7,7 @@ exports.handler = async(event) => {
 
 //GET
 function getBundles() {
-    return result(bundles);
+    return bundles;
 }
 
 const bundles = [

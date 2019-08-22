@@ -7,7 +7,7 @@ exports.handler = async(event) => {
 
 //GET
 function getCategories() {
-    return result(categories);
+    return categories;
 }
 
 const categories = [
