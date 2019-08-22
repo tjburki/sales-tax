@@ -1,5 +1,7 @@
+//Packages
 import * as React from 'react';
 
+//Interfaces
 interface IPercentProps {
     value: number
 }

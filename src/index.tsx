@@ -1,12 +1,23 @@
+//Packages
 import * as React from 'react';
+//@ts-ignore
 import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import './index.scss';
-import App from './App';
+
+//Application
 import * as serviceWorker from './serviceWorker';
+
+//Components
+import App from './App';
+
+//Resources
+import store from './store';
+
+//Styles
+import './index.scss';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
-import store from './store';
+
 
 ReactDOM.render(
     <Provider store={store}>

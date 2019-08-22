@@ -2,5 +2,6 @@ export interface IItem {
     id: number,
     name: string,
     price: number,
-    imported: boolean
+    imported: boolean,
+    taxExempt: boolean
 }

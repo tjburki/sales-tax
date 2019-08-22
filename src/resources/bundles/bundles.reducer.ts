@@ -1,5 +1,8 @@
-import { IDispatchable } from '../../interfaces/store';
+//Data
 import { bundles } from '../../data';
+
+//Interfaces
+import { IDispatchable } from '../../interfaces/store';
 import { IBundle } from '../../interfaces/bundle';
 
 interface IBundlesReducerState {

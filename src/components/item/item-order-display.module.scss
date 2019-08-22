@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+.order {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    width: 75px; 
+    margin-right: 10px;
+}

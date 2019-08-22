@@ -1,6 +1,11 @@
+//Packages
 import * as React from 'react';
-import classes from './section.module.scss';
+
+//Components
 import { Icon } from './icon';
+
+//Interfaces
+import classes from './section.module.scss';
 
 interface ISectionProps {
     title: string,

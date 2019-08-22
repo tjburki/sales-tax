@@ -9,4 +9,8 @@ export interface ICartBaseItem {
     quantity: number
 }
 
-export interface ICartItem extends IItem, ICartBaseItem { }
+export interface ICartClearer {
+    clear: () => void
+}
+
+export interface ICartItem extends IItem, ICartBaseItem {}

@@ -1,4 +1,7 @@
+//Packages
 import * as React from 'react';
+
+//Interfaces
 import { IBundle } from '../../interfaces/bundle';
 import { IBundleDispatchProps } from './bundle-container';
 

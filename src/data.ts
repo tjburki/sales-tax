@@ -1,59 +1,66 @@
-import { ICategory } from "./interfaces/category";
-
 export const items = [
     {
         id: 1,
         name: '16lb Bag of Skittles',
         price: 16.00,
-        imported: false
+        imported: false,
+        taxExempt: true
     },
     {
         id: 2,
         name: 'Crate of Almond Snickers',
         price: 75.99,
-        imported: true
+        imported: true,
+        taxExempt: true
     },
     {
         id: 3,
         name: 'Bag of Vanilla-Hazelnut Coffee',
         price: 11.00,
-        imported: true
+        imported: true,
+        taxExempt: true
     },
     {
         id: 4,
         name: '300# Bag of Fair-Trade Coffee',
         price: 997.99,
-        imported: false
+        imported: false,
+        taxExempt: true
     },
     {
         id: 5,
         name: 'Bag of Microwave Popcorn',
         price: .99,
-        imported: false
+        imported: false,
+        taxExempt: true
     },
     {
         id: 6, 
         name: 'Walkman',
         price: 99.99,
-        imported: false
+        imported: false,
+        taxExempt: false
     },
     {
         id: 7, 
         name: 'Discman',
         price: 55.00,
-        imported: false
+        imported: false,
+        taxExempt: false
     },
     {
         id: 8,
         name: 'Vespa',
         price: 15001.25,
-        imported: true
+        imported: true,
+        taxExempt: false
     },
     {
         id: 9,
         name: 'Bottle of Wine',
         price: 10.00,
-        imported: true
+        imported: true,
+        taxExempt: false
     }
 ];
 
@@ -66,13 +73,15 @@ export const categories = [
                 id: 1,
                 name: '16lb Bag of Skittles',
                 price: 16.00,
-                imported: false
+                imported: false,
+                taxExempt: true
             },
             {
                 id: 2,
                 name: 'Crate of Almond Snickers',
                 price: 75.99,
-                imported: true
+                imported: true,
+                taxExempt: true
             }
         ],
         taxExempt: true
@@ -85,13 +94,15 @@ export const categories = [
                 id: 3,
                 name: 'Bag of Vanilla-Hazelnut Coffee',
                 price: 11.00,
-                imported: true
+                imported: true,
+                taxExempt: true
             },
             {
                 id: 4,
                 name: '300# Bag of Fair-Trade Coffee',
                 price: 997.99,
-                imported: false
+                imported: false,
+                taxExempt: true
             }
         ],
         taxExempt: true
@@ -104,7 +115,8 @@ export const categories = [
                 id: 5,
                 name: 'Bag of Microwave Popcorn',
                 price: .99,
-                imported: false
+                imported: false,
+                taxExempt: true
             }
         ],
         taxExempt: true
@@ -117,13 +129,15 @@ export const categories = [
                 id: 6, 
                 name: 'Walkman',
                 price: 99.99,
-                imported: false
+                imported: false,
+                taxExempt: false
             },
             {
                 id: 7, 
                 name: 'Discman',
                 price: 55.00,
-                imported: false
+                imported: false,
+                taxExempt: false
             }
         ],
         taxExempt: false
@@ -136,7 +150,8 @@ export const categories = [
                 id: 8,
                 name: 'Vespa',
                 price: 15001.25,
-                imported: true
+                imported: true,
+                taxExempt: false
             }
         ],
         taxExempt: false
@@ -149,7 +164,8 @@ export const categories = [
                 id: 9,
                 name: 'Bottle of Wine',
                 price: 10.00,
-                imported: true
+                imported: true,
+                taxExempt: false
             }
         ],
         taxExempt: false
@@ -158,7 +174,7 @@ export const categories = [
 
 export const bundles = [
     {
-        name: 'Bundle #1',
+        name: 'Basket #1',
         items: [
             {
                 id: 1,
@@ -175,7 +191,7 @@ export const bundles = [
         ]
     },
     {
-        name: 'Bundle #2',
+        name: 'Basket #2',
         items: [
             {
                 id: 3,
@@ -188,7 +204,7 @@ export const bundles = [
         ]
     },
     {
-        name: 'Bundle #3',
+        name: 'Basket #3',
         items: [
             {
                 id: 2,

@@ -1,15 +1,26 @@
+//Packages
 import * as React from 'react';
-import { categories } from '../../data';
+
+//Components
 import { CategoryDisplay } from '../category/category-display';
-import classes from './catalogue.module.scss';
 
-interface ICatalogueProps {
+//Interfaces
+import { ICategory } from '../../interfaces/category';
 
+export interface ICatalogueProps {
+    categories: ICategory[]
 }
 
 export const Catalogue: React.FC<ICatalogueProps> = (props: ICatalogueProps) =>
-    <div>
+    <React.Fragment>
         {
-            categories.map(category => <CategoryDisplay {...category} />)
+            props.categories.map(category => 
+                <CategoryDisplay
+                    id={category.id}
+                    name={category.name}
+                    taxExempt={category.taxExempt}
+                    items={category.items}
+                />
+            )
         }
-    </div>;
+    </React.Fragment>;

@@ -1,17 +1,21 @@
 //Packages
 import * as React from 'react';
-import { Percent } from '../layout/percent';
-import * as constants from '../../constants';
-import classes from './key.module.scss';
 
+//Components
+import { Percent } from '../layout/percent';
+
+//Constants
+import * as constants from '../../constants';
+
+//Interfaces
 interface IKeyProps { }
 
 export const Key: React.FC<IKeyProps> = (props: IKeyProps) =>
-    <div className={classes.container}>
+    <div className='font-italic'>
         <div>
-            * Tax Exempt items are excluded from <Percent value={constants.salesTaxPercent} /> sales tax
+            {constants.taxExemptMarker}Tax Exempt items are excluded from <Percent value={constants.salesTaxPercent} /> sales tax
         </div>
         <div>
-            ** Imported items include a mandatory <Percent value={constants.importDutyTaxPercent} /> duty tax
+            {constants.importedMarker}Imported items include a mandatory <Percent value={constants.importDutyTaxPercent} /> duty tax
         </div>
     </div>;

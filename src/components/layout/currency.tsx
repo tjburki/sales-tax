@@ -1,6 +1,10 @@
+//Packages
 import * as React from 'react';
+
+//Constants
 import { formatCurrency } from '../../helpers';
 
+//Interfaces
 interface ICurrencyProps {
     value: number
 }

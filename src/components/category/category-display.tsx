@@ -2,28 +2,33 @@
 import * as React from 'react';
 
 //Components
-import { ItemDisplay } from '../item/item-display';
+import ItemOrderDisplayContainer from '../item/item-order-display-container';
+import { Section } from '../layout/section';
 
 //Styles
 import classes from './category-display.module.scss';
 
 //Interfaces
 import { ICategory } from '../../interfaces/category';
-import { Section } from '../layout/section';
-import ItemDisplayContainer from '../item/item-display-container';
+import { IItem } from '../../interfaces/item';
 
-interface ICategoryDisplayProps extends ICategory {
-    
-}
+interface ICategoryDisplayProps extends ICategory { }
 
 export const CategoryDisplay: React.FC<ICategoryDisplayProps> = (props: ICategoryDisplayProps) =>
     <div className={classes.container}>
         <Section
             title={props.name}
-            subtitle={props.taxExempt ? '(Tax Exempt*)' : ''}
         >
             {
-                props.items && props.items.map(item => <ItemDisplayContainer {...item} />)
+                props.items.map((item: IItem) => 
+                    <ItemOrderDisplayContainer
+                        id={item.id}
+                        name={item.name}
+                        price={item.price}
+                        imported={item.imported}
+                        taxExempt={item.taxExempt}
+                    />
+                )
             }
         </Section>
     </div>;

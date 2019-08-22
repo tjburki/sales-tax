@@ -1,0 +1,23 @@
+.lineItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.subtotal {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    font-size: .8rem;
+    text-align: right;
+}
+
+.grandTotal {
+    font-size: 1.3rem;
+    font-weight: bold;
+}

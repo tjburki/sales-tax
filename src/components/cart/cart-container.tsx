@@ -1,7 +1,14 @@
+//Packages
 import { connect } from 'react-redux';
+
+//Components
 import { Cart } from './cart';
+
+//Resources
 import { ThunkDispatch } from 'redux-thunk';
 import { clear } from '../../resources/cart/cart.actions';
+
+//Interfaces
 import { ICartBaseItem } from '../../interfaces/cart';
 import { IItem } from '../../interfaces/item';
 

@@ -1,6 +1,11 @@
-import * as cartTypes from './cart.types';
-import { ICartBaseItem } from '../../interfaces/cart';
+//Packages
 import { ThunkDispatch } from 'redux-thunk';
+
+//Resources
+import * as cartTypes from './cart.types';
+
+//Interfaces
+import { ICartBaseItem } from '../../interfaces/cart';
 import { IBundle } from '../../interfaces/bundle';
 
 export const changeItemQuantity = (cartItem: ICartBaseItem) => (dispatch: ThunkDispatch<{}, {}, any>) => 

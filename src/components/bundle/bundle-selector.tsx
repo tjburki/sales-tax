@@ -1,15 +1,20 @@
+//Packages
 import * as React from 'react';
-import classes from './bundle-selector.module.scss';
-import { IBundle } from '../../interfaces/bundle';
+
+//Components
 import BundleContainer from './bundle-container';
+import { ButtonRow } from '../layout/button-row';
+
+//Interfaces
+import { IBundle } from '../../interfaces/bundle';
 
 interface IBundleSelectorProps {
     bundles: IBundle[]
 }
 
 export const BundleSelector: React.FC<IBundleSelectorProps> = (props: IBundleSelectorProps) =>
-    <div className={classes.container}>
+    <ButtonRow>
         {
             props.bundles.map(bundle => <BundleContainer {...bundle} />)
         }
-    </div>;
+    </ButtonRow>;

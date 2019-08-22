@@ -1,8 +1,15 @@
+//Packages
 import { connect } from 'react-redux';
-import { Bundle, IBundleProps } from './bundle';
-import { IBundle } from '../../interfaces/bundle';
 import { ThunkDispatch } from 'redux-thunk';
+
+//Components
+import { Bundle, IBundleProps } from './bundle';
+
+//Resources
 import { updateFromBundle } from '../../resources/cart/cart.actions';
+
+//Interfaces
+import { IBundle } from '../../interfaces/bundle';
 
 interface IBundleContainerProps extends IBundle { }
 

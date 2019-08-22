@@ -1,6 +1,10 @@
+//Packages
 import { connect } from 'react-redux';
+
+//Components
 import { BundleSelector } from './bundle-selector';
 
+//Interfaces
 interface IBundleSelectorContainerProps { }
 
 const mapStateToProps = (state: any, ownProps: IBundleSelectorContainerProps) => {

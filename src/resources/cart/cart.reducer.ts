@@ -1,7 +1,9 @@
+//Resources
 import * as cartTypes from './cart.types';
+
+//Interfaces
 import { IDispatchable } from '../../interfaces/store';
 import { ICartBaseItem } from '../../interfaces/cart';
-import { IBundle } from '../../interfaces/bundle';
 
 interface ICartState {
     items: ICartBaseItem[]

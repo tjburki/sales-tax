@@ -2,14 +2,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
-
-    &:last-of-type {
-        padding-bottom: 0;
-    }
-}
-
-.order {
-    display: flex;
-    align-items: center;
+    flex: 1;
 }

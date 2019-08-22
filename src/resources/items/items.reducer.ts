@@ -1,6 +1,9 @@
+//Resources
+import { items } from '../../data';
+
+//Interfaces
 import { IDispatchable } from '../../interfaces/store';
 import { IItem } from '../../interfaces/item';
-import { items } from '../../data';
 
 interface IItemsReducerState {
     items: IItem[]

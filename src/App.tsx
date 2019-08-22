@@ -1,15 +1,22 @@
+//Packages
 import * as React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import classes from './App.module.scss';
+
+//Components
 import { OrderForm } from './pages/order-form';
-import { Checkout } from './pages/checkout';
+import CheckoutContainer from './pages/checkout-container';
+import { Confirmation } from './pages/confirmation';
+
+//Styles
+import classes from './App.module.scss';
 
 function App() {
   return (
     <div className={classes.app}>
       <Router>
         <Route exact path='/' component={OrderForm} />
-        <Route path='/checkout' component={Checkout} />
+        <Route path='/checkout' component={CheckoutContainer} />
+        <Route path='/confirmation' component={Confirmation} />
       </Router>
     </div>
   );

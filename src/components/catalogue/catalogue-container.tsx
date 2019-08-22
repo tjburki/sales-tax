@@ -1,9 +1,13 @@
-import * as React from 'react';
+//Packages
 import { connect } from 'react-redux';
-import { Catalogue } from './catalogue';
 
-class CatalogueContainer extends React.Component {
+//Components
+import { Catalogue, ICatalogueProps } from './catalogue';
 
-}
+interface ICatalogueContainerProps { }
 
-export default connect(Catalogue);
+const mapStateToProps = (state: any, ownProps: ICatalogueContainerProps): ICatalogueProps => ({
+    categories: state.categoriesReducer.categories
+});
+
+export default connect(mapStateToProps)(Catalogue);
