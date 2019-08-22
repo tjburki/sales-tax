@@ -1,5 +1,5 @@
 //Resources
-import { items } from '../../store/data';
+import { items } from '../../data/data';
 
 //Interfaces
 import { IDispatchable } from '../../interfaces/store';
