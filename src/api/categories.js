@@ -8,7 +8,11 @@ exports.handler = async(event) => {
 
     return {
         statusCode: 200,
-        body: JSON.stringify(categories)
+        body: JSON.stringify(categories),
+        headers: {
+            'content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+        }
     }
 }
 const categories = [
