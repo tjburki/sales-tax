@@ -7,7 +7,10 @@ exports.handler = async(event) => {
 
 //GET
 function getItems() {
-    return items;
+    return {
+        statusCode: 200,
+        body: items
+    };
 }
 
 const items = [

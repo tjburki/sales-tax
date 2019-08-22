@@ -7,7 +7,10 @@ exports.handler = async(event) => {
 
 //GET
 function getBundles() {
-    return bundles;
+    return {
+        statusCode: 200,
+        body: bundles
+    };
 }
 
 const bundles = [
