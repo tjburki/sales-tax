@@ -10,7 +10,7 @@ import { Confirmation } from './pages/confirmation';
 //Styles
 import classes from './App.module.scss';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className={classes.app}>
       <Router>

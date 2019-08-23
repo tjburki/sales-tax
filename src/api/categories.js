@@ -15,6 +15,7 @@ exports.handler = async(event) => {
         }
     }
 }
+
 const categories = [
     {
         id: 1,

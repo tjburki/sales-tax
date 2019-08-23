@@ -22,6 +22,7 @@ export const CategoryDisplay: React.FC<ICategoryDisplayProps> = (props: ICategor
             {
                 props.items.map((item: IItem) => 
                     <ItemOrderDisplayContainer
+                        key={item.id}
                         id={item.id}
                         name={item.name}
                         price={item.price}

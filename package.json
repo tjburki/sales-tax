@@ -9,8 +9,12 @@
     "@types/react-router": "^5.0.3",
     "@types/react-router-dom": "^4.3.4",
     "@types/redux-thunk": "^2.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^24.9.0",
+    "babel-preset-react-app": "^9.0.1",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
+    "jest-css-modules": "^2.1.0",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -25,7 +29,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2"
   }
 }

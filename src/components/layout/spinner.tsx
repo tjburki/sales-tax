@@ -8,4 +8,4 @@ import { Icon } from './icon';
 interface ISpinnerProps { }
 
 export const Spinner: React.FC<ISpinnerProps> = (props: ISpinnerProps) =>
-    <Icon type='spinner' pulse />;
+    <div style={{padding: 10, fontSize: '4rem', textAlign: 'center'}}><Icon type='spinner' pulse /></div>;

@@ -1,13 +1,43 @@
 //Packages
 import { connect } from 'react-redux';
+import { ThunkDispatch } from 'redux-thunk';
 
 //Components
-import { Catalogue, ICatalogueProps } from './catalogue';
+import { Catalogue } from './catalogue';
 
-interface ICatalogueContainerProps { }
+//Resources
+import { getCategories } from '../../resources/categories/categories.actions';
+import { getItems } from '../../resources/items/items.actions';
 
-const mapStateToProps = (state: any, ownProps: ICatalogueContainerProps): ICatalogueProps => ({
-    categories: state.categoriesReducer.categories
+//Interfaces
+import { ICategory } from '../../interfaces/category';
+import { IItem } from '../../interfaces/item';
+import { IAction } from '../../interfaces/store';
+
+interface ICatalogueContainerProps {}
+
+interface ICatalogueStateProps {
+    categories: ICategory[],
+    items: IItem[],
+    isLoading: boolean,
+    error: string
+}
+
+interface ICatalogueDispatchProps {
+    getCategories: () => IAction,
+    getItems: () => IAction
+}
+
+const mapStateToProps = (state: any, ownProps: ICatalogueContainerProps): ICatalogueStateProps => ({
+    categories: state.categoriesReducer.categories,
+    items: state.itemsReducer.items,
+    isLoading: state.categoriesReducer.isLoading || state.itemsReducer.isLoading,
+    error: [state.categoriesReducer.error, state.itemsReducer.error].join(' ')
 });
 
-export default connect(mapStateToProps)(Catalogue);
+const mapDispatchToProps = (dispatch: ThunkDispatch<{}, {}, any>): ICatalogueDispatchProps => ({
+    getCategories: () => dispatch(getCategories()),
+    getItems: () => dispatch(getItems())
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Catalogue);
