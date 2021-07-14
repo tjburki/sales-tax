@@ -11,7 +11,7 @@ export const taxExemptMarker = '*';
 export const importedMarker = '†';
 
 //Data
-const items = [
+export const items = [
     {
         id: 1,
         name: '16lb Bag of Skittles',
@@ -77,7 +77,7 @@ const items = [
     }
 ];
 
-const categories = [
+export const categories = [
     {
         id: 1,
         name: 'Candy',
@@ -185,7 +185,7 @@ const categories = [
     }
 ];
 
-const bundles = [
+export const bundles = [
     {
         name: 'Basket #1',
         items: [
