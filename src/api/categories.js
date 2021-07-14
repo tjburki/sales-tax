@@ -1,18 +1,12 @@
 exports.handler = async(event) => {
-    if (event.httpMethod !== 'GET') {
-        return {
-            statusCode: 405,
-            body: 'Method Not Allowed'
-        };
-    }
-
     return {
         statusCode: 200,
-        body: JSON.stringify(categories),
-        headers: {
+		headers: {
             'content-type': 'application/json',
+			'Access-Control-Allow-Methods': 'GET,OPTION',
             'Access-Control-Allow-Origin': '*',
         }
+        body: JSON.stringify(categories),
     }
 }
 
