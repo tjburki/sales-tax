@@ -1,5 +1,8 @@
 # Example Order Form With Sales Tax Calculation
 
+## Live Example
+https://goofy-mayer-d56149.netlify.app/
+
 ## Placing an Order
 
 ### Select the amount of each item desired:
