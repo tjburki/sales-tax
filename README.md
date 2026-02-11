@@ -1,5 +1,8 @@
 # Example Order Form With Sales Tax Calculation
 
+## Background
+This was originally given to me as a coding test that focused on calculating sales tax of different items. The UI was optional but I decided to approach from an e-commerce perspective. I focused on trying to convey maximal information with minimal disruption to the user experience.
+
 ## Live Example
 https://goofy-mayer-d56149.netlify.app/
 
